@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+  <html>
+   <head>
+    <title>Sentencias MySQL</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+      <meta dexription="Gestion Base de datos">
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    </head>
+<body>
+  <!--   <div class="container"> -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#" style="color: #ffff">
+      <img src="img/logo.png" width="50" height="50" alt="Gestion BD" style="border-radius: 100%;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" style="color: #ffff">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+              Lecturas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="sgdb.html">SGBD</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="mysql.html"> Introducción a Mysql</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="workbench.html" >Introdución a Workbench</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="er.html" >Modelo Entidad Relación</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="sentenciassql.html" >Sentencias Mysql</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+              Multimedia
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="gestionBD.html">Gestion de información BD</a>
+              <a class="dropdown-item" href="tallerBD.html">Taller BD</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="mapa.html">Mapa Conceptua BD</a>
+            </div>
+          </li>
+          
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+              Actividades
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="crucigrama.html">crucigrama</a>
+            </div>
+          </li>
+         <li class="nav-item">
+          <a class="nav-link" href="autores.html" style="color: #ffff">Autores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.unad.edu.co/" target="_blanck" style="color: #ffff">
+          <div style="text-align: right;"><img src="img/logoUNAD.png"></div></a
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+<section id="section">
+<h3>Sentencias de MYSQL</h3>
+<br>
+
+<p><strong>Sentencias para trabajar con tablas en MySQL</strong><br>
+Estas son las sentencias básicas más comunes para trabajar con tablas en MySQL extraídas de un página web oficial:<br>
+  CREATE TABLE <br>
+  ALTER TABLE<br>
+  DROP TABLE<br>
+  TRUNCATE TABLE<br>
+  RENAME TABLE<br></p>
+
+<h4>CREATE TABLE MySQL</h4><br>
+<p>
+  <strong>CREATE TABLE </strong> es la sentencia que tenemos que usar para crear una tabla en la base de datos. Su sintaxis básica es la siguiente:<br>
+MySQL
+CREATE TABLE IF NOT EXISTS nombre_tabla<br>
+ALTER TABLE MySQL<br>
+Con ALTER TABLE podemos modificar la estructura y especificaciones de las tablas y sus columnas en una base de datos. Su sintaxis básica es la siguiente:<br>
+
+ALTER [ONLINE | OFFLINE] [IGNORE] TABLE nombre_tabla
+[alter_specification [, alter_specification] ...]
+
+DROP TABLE MySQL<br>
+Con DROP TABLE eliminamos una tabla de la base de datos. Su sintaxis básica es la siguiente:<br>
+
+DROP TABLE IF EXISTS nombre_tabla<br>
+TRUNCATE TABLE MySQL<br>
+La finalidad de TRUNCATE TABLE vaciamos todo el contenido de una tabla de la base de datos, la tabla siguen manteniendo las columnas y sus especificaciones. Su sintaxis básica es la siguiente:<br>
+
+TRUNCATE TABLE nombre_tabla;<br>
+RENAME TABLE MySQL<br>
+Con RENAME TABLE cambiamos el nombre de una tabla de la base de datos. Su sintaxis básica es la siguiente:<br>
+
+RENAME TABLE nombre_tabla TO nombre_nuevo_tabla<br>
+</p>
+	
+</section>
+<div id="footer">
+      <footer>@copyrigth Aura Rodriguez 2018<div class="col-lg-12"><a href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @UniversidadUNAD</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+      <a href="https://www.contadorvisitasgratis.com" title="contador de visitas gratis"><div style="text-align: left;"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=8x39bs4lsyffcwa478p5mnl2n7c1l5np" border="0" title="contador de visitas gratis" alt="contador de visitas gratis"></div></a>
+      </footer>
+    </div>
+    </div><!--div container -->
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="css/bootstrap/dist/js/bootstrap.min.js"></script> <!-- scritp js -->
+    </body>
+    </html>	

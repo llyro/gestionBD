@@ -1,0 +1,151 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>ADMINISTRACION BD</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+      <meta dexription="Gestion Base de datos">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    </head>
+    <body>
+  <!--   <div class="container"> -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#" style="color: #ffff">
+      <img src="img/logo.png" width="50" height="50" alt="Gestion BD" style="border-radius: 100%;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" style="color: #ffff">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+              Lecturas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="sgdb.html">SGBD</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="mysql.html"> Introducción a Mysql</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="workbench.html" >Introdución a Workbench</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="er.html" >Modelo Entidad Relación</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="sentenciassql.html" >Sentencias Mysql</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+              Multimedia
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="gestionBD.html">Gestion de información BD</a>
+              <a class="dropdown-item" href="tallerBD.html">Taller BD</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="mapa.html">Mapa Conceptua BD</a>
+            </div>
+          </li>
+          
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+              Actividades
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="">crucigrama</a>
+            </div>
+          </li>
+         <li class="nav-item">
+          <a class="nav-link" href="autores.html" style="color: #ffff">Autores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.unad.edu.co/" target="_blanck" style="color: #ffff">
+          <div style="text-align: right;"><img src="img/logoUNAD.png"></div></a
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+    <div id="img">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/maria.jpg" alt="Maria BD">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/ER.png" alt="MySQL modelo E-R workbench ">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/copiaseg.jpg" alt="mysql">
+          <div class="carousel-caption d-none d-md-block">
+        <h5 style="color:#026698;">Facilidad de realización de copias de seguridad</h5>
+        <p style="color: #026698;">Realizar tus backups nunca fue tan fácil</p>
+      </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/work.jpg" alt="mysql">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div><!--carrusel-->
+
+    <section>
+     <h3>Información general sobre el OVI</h3><p>Se realiza presentación de información general del sistema de gestión base de datos, almacenamiento de la información, modelo entidad relación, sentencias, información sobre workbench y todos los procesos de la información procesada para ser utiliza en beneficio de sacar estadísticas, reportes entre otros y así generar estrategias de negocio.</p>
+     
+      <h3>Los objetivos del OVI</h3>
+      <p>Hace referencia a las temáticas de: La creación de un O.V.I.(Objeto Virtual de Información). Para esta Fase de Diseño, los estudiantes del grupo de trabajo colaborativo deberán seleccionar uno de los distintos cursos ofertados por la universidad y otorgados por el Tutor encargado de la actividad y posteriormente realizar un portal web en relación con el O.V.I., teniendo en cuenta las estatutos establecidos por la universidad para el uso de su logotipo, el uso de sus colores y de su tipografía, entre otros aspectos, según el Manual de Identidad Institucional.
+     </p>
+     <h3>Objetivos del curso</h3>
+     <p>
+        El presente trabajo se realiza con el fin de presentar la evidencia necesaria para comprobarla exitosa realización de las distintas actividades propuestas como parte de la Fase de Diseño del curso Diseños de Sitios Web permitiendo Aprender a través de la plataforma y su contenido un desarrollo completo y limpio de un sitio web, dar a conocer las temáticas a desarrollar durante el curso virtual de aprendizaje de Diseño de Sitios Web, así como también realizar una introducción básica a los principales conceptos a analizar, comprender, entender y desarrollar dentro de las mismas.
+     </p>
+     <h3>Temáticas </h3><br>
+     1. las temáticas al cual hace referencia: <br>
+       INTRODUCCION A LA SGBD<br>
+       Introduccion a MySQL<br>
+       Introduccion a MySQL Workbench<br> 
+       Modelo entidad relación<br>
+       Sentencias de MYSQL<br>
+       <h5>Participantes:</h5>
+       AuraRodriguez Amaya<br>
+       Sandra Hernandez <br>
+
+       <br><br><br>
+    </section>
+    <aside><a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></aside>
+    <div id="footer">
+      <footer>@copyrigth Aura Rodriguez 2018 <div class="col-lg-12"><a href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @UniversidadUNAD</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+      <a href="https://www.contadorvisitasgratis.com" title="contador de visitas gratis"><div style="text-align: left;"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=8x39bs4lsyffcwa478p5mnl2n7c1l5np" border="0" title="contador de visitas gratis" alt="contador de visitas gratis"></div></a>
+      </footer>
+    </div>
+
+   <!--  </div><!--div container -->
+     <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="css/bootstrap/dist/js/bootstrap.min.js"></script> <!-- scritp js -->
+    </body>
+    </html> 
+   

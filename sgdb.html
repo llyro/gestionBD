@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+    <html>
+    <head>
+    	<title>SGBD</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+      <meta dexription="Gestion Base de datos">
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    </head>
+<body>
+  <!--   <div class="container"> -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#" style="color: #ffff">
+      <img src="img/logo.png" width="50" height="50" alt="Gestion BD" style="border-radius: 100%;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html" style="color: #ffff">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+              Lecturas
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="sgdb.html">SGBD</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="mysql.html"> Introducción a Mysql</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="workbench.html" >Introdución a Workbench</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="er.html" >Modelo Entidad Relación</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="sentenciassql.html" >Sentencias Mysql</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+              Multimedia
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="gestionBD.html">Gestion de información BD</a>
+              <a class="dropdown-item" href="tallerBD.html">Taller BD</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="mapa.html">Mapa Conceptua BD</a>
+            </div>
+          </li>
+          
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff">
+              Actividades
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="crucigrama.html">crucigrama</a>
+            </div>
+          </li>
+         <li class="nav-item">
+          <a class="nav-link" href="autores.html" style="color: #ffff">Autores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.unad.edu.co/" target="_blanck" style="color: #ffff">
+          <div style="text-align: right;"><img src="img/logoUNAD.png"></div></a
+          </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+      </div>
+    </nav>
+<section id="section">
+<h3> INTRODUCCION A LA SGBD</h3>
+	<p>
+   (en inglés database management system, abreviado DBMS) o SGBD son un tipo de software especifico que sirve de interfaz entre la base de datos, el usuario y las aplicaciones que la utilizan. Permiten describir los elementos de datos con su estructura, sus interrelaciones y sus validaciones. 
+  </p>
+  <h5>PROPOSITO</h5>
+  <p>El propósito general de los sistemas de gestión de bases de datos es el de manejar de manera clara, sencilla y ordenadamente un conjunto de datos que posteriormente se convertirán en información relevante para una organización.</p>
+  <h5>OBJETIVOS</h5>
+  <p>
+ 1. <strong>Abstracción de la información.</strong> Los SGBD ahorran a los usuarios detalles acerca del almacenamiento físico de los datos. Da lo mismo si una base de datos ocupa uno o cientos de archivos, este hecho se hace transparente al usuario. Así, se definen varios niveles de abstracción.<br>
+2. <strong>Independencia.</strong> La independencia de los datos consiste en la capacidad de modificar el esquema (físico o lógico) de una base de datos sin tener que realizar cambios en las aplicaciones que se sirven de ella.<br>
+3.<strong>Consistencia.</strong>  En aquellos casos en los que no se ha logrado eliminar la redundancia, será necesario vigilar que aquella información que aparece repetida se actualice de forma coherente, es decir, que todos los datos repetidos se actualicen de forma simultánea. Por otra parte, la base de datos representa una realidad determinada que tiene determinadas condiciones, por ejemplo que los menores de edad no pueden tener licencia de conducir. El sistema no debería aceptar datos de un conductor menor de edad. En los SGBD existen herramientas que facilitan la programación de este tipo de condiciones.<br>
+4. <strong>Seguridad.</strong> La información almacenada en una base de datos puede llegar a tener un gran valor. Los SGBD deben garantizar que esta información se encuentra segura de permisos a usuarios y grupos de usuarios, que permiten otorgar diversas categorías de permisos.<br>
+5. <strong>Manejo de transacciones.</strong> Una transacción es un programa que se ejecuta como una sola operación. Esto quiere decir que luego de una ejecución en la que se produce una falla es el mismo que se obtendría si el programa no se hubiera ejecutado. Los SGBD proveen mecanismos para programar las modificaciones de los datos de una forma mucho más simple que si no se dispusiera de ellos.<br>
+6. <strong>Tiempo de respuesta.</strong> Lógicamente, es deseable minimizar el tiempo que el SGBD demora en proporcionar la información solicitada y en almacenar los cambios realizados.
+  </p>
+<h4> Ventajas</h4>
+<p>1. Proveen facilidades para la manipulación de grandes volúmenes de datos (ver objetivos). Entre éstas:<br>
+ a) Simplifican la programación de equipos de consistencia.<br>
+ b) Manejando las políticas de respaldo adecuadas, garantizan que los cambios de la base serán siempre consistentes sin importar si hay errores correctamente, etc.<br>
+ c) Organizan los datos con un impacto mínimo en el código de los programas.<br>
+ d) Disminuyen drásticamente los tiempos de desarrollo y aumentan la calidad del sistema desarrollado si son bien explotados por los desarrolladores.<br>
+ e) Usualmente, proveen interfaces y lenguajes de consulta que simplifican la recuperación de los datos.</p>
+<h4>Inconvenientes</h4>
+<p>1.  Típicamente, es necesario disponer de una o más personas que administren la base de datos, de la misma forma en que suele ser necesario en instalaciones de cierto porte disponer de una o más personas que administren los sistemas operativos. Esto puede llegar a incrementar los costos de operación en una empresa. Sin embargo hay que balancear este aspecto con la calidad y confiabilidad del sistema que se obtiene.<br>
+2.  Si se tienen muy pocos datos que son usados por un único usuario por vez y no hay que realizar consultas complejas sobre los datos, entonces es posible que sea mejor usar una hoja de cálculo.<br>
+3.  Complejidad: los softwares muy complejos y las personas que vayan a usarlo deben tener conocimiento de las funcionalidades del mismo para poder aprovecharlo al máximo.<br>
+4.  Tamaño: la complejidad y la gran cantidad de funciones que tienen hacen que sea un software de gran tamaño, que requiere de gran cantidad de memoria para poder correr.<br>
+5.  Coste del hardware adicional: los requisitos de hardware para correr un SGBD por lo general son relativamente altos, por lo que estos equipos pueden llegar a costar gran cantidad de dinero.</p>
+<br><br>
+
+</section>
+<div id="footer">
+      <footer>@copyrigth Aura Rodriguez 2018<div class="col-lg-12"><a href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @UniversidadUNAD</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+      <a href="https://www.contadorvisitasgratis.com" title="contador de visitas gratis"><div style="text-align: left;"><img src="https://counter5.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=8x39bs4lsyffcwa478p5mnl2n7c1l5np" border="0" title="contador de visitas gratis" alt="contador de visitas gratis"></div></a>
+      </footer>
+    </div>
+    </div><!--div container -->
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="css/bootstrap/dist/js/bootstrap.min.js"></script> <!-- scritp js -->
+    </body>
+    </html>	

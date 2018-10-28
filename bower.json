@@ -1,0 +1,23 @@
+{
+  "name": "administracionBD",
+  "homepage": "https://github.com/llyro/llyro.adminBD.io",
+  "authors": [
+    "Aura R"
+  ],
+  "description": "modelo entidad relacion, consultas sql,Mysql",
+  "main": "index.html",
+  "keywords": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
